@@ -1,9 +1,26 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/index.js",
+  mode: "development",
+  entry: "./src/js/index.js",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
   },
+<<<<<<< HEAD
+=======
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+    ],
+  },
+  devServer: {
+    static: path.join(__dirname, "dist"),
+    port: 9000,
+    open: true,
+  },
+>>>>>>> cssBranch
 };
