@@ -1,1 +1,2 @@
-import "./style.sass";
+import "../css/style.scss";
+import "./layout.js";
