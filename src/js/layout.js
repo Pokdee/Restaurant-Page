@@ -1,3 +1,2 @@
-const contentCon = document.getElementById("content");
-
-console.log(contentCon);
+const content = document.getElementById("content");
+console.log(content);
