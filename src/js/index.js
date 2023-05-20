@@ -1,2 +1,2 @@
-import "../css/style.scss";
 import "./layout.js";
+import "../css/style.scss";
