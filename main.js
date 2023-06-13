@@ -120,13 +120,33 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/js/homepage.js":
+/*!****************************!*\
+  !*** ./src/js/homepage.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layout */ \"./src/js/layout.js\");\n\r\nconst homeCon = document.createElement(\"div\");\r\nhomeCon.classList.add(\"home_contents\");\r\n_layout__WEBPACK_IMPORTED_MODULE_0__[\"default\"].appendChild(homeCon);\r\nfor (let i = 0; i < 3; i++) {\r\n  let el = document.createElement(\"div\");\r\n  homeCon.appendChild(el);\r\n}\r\nconst moto1 = homeCon.children[0];\r\nconst imageCon = homeCon.children[1];\r\nconst moto2 = homeCon.children[2];\r\n////moto1\r\nmoto1.classList.add(\"moto\");\r\nconst moto1Html = `<span>Serving Best Food <br />\r\nFrom All Across From Galaxy<span/>`;\r\n\r\nmoto1.insertAdjacentHTML(\"afterbegin\", moto1Html);\r\n//moto2\r\nconst img = document.createElement(\"img\");\r\n\r\nimg.src = \"../images/nobnob.jpg\";\r\nimg.alt = \"noob noob the chef\";\r\nimageCon.appendChild(img);\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/js/homepage.js?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.scss */ \"./src/css/style.scss\");\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _layout_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layout.js */ \"./src/js/layout.js\");\n/* harmony import */ var _homepage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./homepage.js */ \"./src/js/homepage.js\");\n/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/style.scss */ \"./src/css/style.scss\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/layout.js":
+/*!**************************!*\
+  !*** ./src/js/layout.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst content = document.getElementById(\"content\");\r\nconst header = document.createElement(\"header\");\r\nconst heading = document.createElement(\"span\");\r\nconst tabCon = document.createElement(\"div\");\r\nconst datas = document.createElement(\"datas\");\r\nconst footer = document.createElement(\"footer\");\r\nconst footText = document.createElement(\"span\");\r\nconst body = document.querySelector(\"body\");\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (datas);\r\n\r\n//Heading part\r\ncontent.appendChild(header);\r\n\r\nheader.classList.add(\"header\");\r\nheader.appendChild(heading);\r\nheading.textContent = \"SHONEY'S\";\r\nheading.classList.add(\"header_heading\");\r\n\r\n//tabs\r\ncontent.appendChild(tabCon);\r\ntabCon.classList.add(\"tab_Con\");\r\nfor (let i = 0; i < 3; i++) {\r\n  let button = document.createElement(\"button\");\r\n  button.classList.add(\"btn\");\r\n  tabCon.appendChild(button);\r\n}\r\ntabCon.firstChild.textContent = \"Home\";\r\ntabCon.children[1].textContent = \"Menu\";\r\ntabCon.children[2].textContent = \"Contact\";\r\n\r\n//datas\r\ncontent.appendChild(datas);\r\n\r\n//footer\r\nbody.append(footer);\r\nfooter.classList.add(\"foot\");\r\nfooter.appendChild(footText);\r\nfootText.textContent = \"Copyright Shoney's\";\r\nfootText.classList.add(\"foot-text\");\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/js/layout.js?");
 
 /***/ }),
 
