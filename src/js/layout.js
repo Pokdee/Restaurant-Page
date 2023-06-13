@@ -6,6 +6,7 @@ const datas = document.createElement("datas");
 const footer = document.createElement("footer");
 const footText = document.createElement("span");
 const body = document.querySelector("body");
+export default datas;
 
 //Heading part
 content.appendChild(header);
