@@ -1,12 +1,5 @@
 import datas from "./layout";
-// //Images
-// import Food_1 from "../images/foods/SzechuanchickenmcNuggetsauce.png";
-// import Megaseeds from "../images/foods/seeds.png";
-// import KalaxianCrystals from "../images/foods/crystal.jpg";
-// import Strawberrysmiggles from "../images/foods/strawberry.jpg";
-// import Eyeholes from "../images/foods/eyehole.jpg";
-// import YummysYums from "../images/foods/yummy.jpg";
-// //
+
 const menu = document.createElement("div");
 menu.classList.add("menu");
 datas.appendChild(menu);
