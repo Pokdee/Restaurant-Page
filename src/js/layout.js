@@ -2,10 +2,11 @@ const content = document.getElementById("content");
 const header = document.createElement("header");
 const heading = document.createElement("span");
 const tabCon = document.createElement("div");
-const datas = document.createElement("datas");
 const footer = document.createElement("footer");
 const footText = document.createElement("span");
 const body = document.querySelector("body");
+// datas to show contents
+const datas = document.createElement("datas");
 export default datas;
 
 //Heading part

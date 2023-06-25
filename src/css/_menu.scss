@@ -1,0 +1,30 @@
+.menu {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: $shady_bg;
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  justify-items: center;
+  grid-gap: 2rem;
+
+  &_Items {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  &_Img {
+    width: 15rem;
+    height: 15em;
+    border-radius: 1rem;
+  }
+  &_Name {
+    font-size: 1.6rem;
+    text-align: center;
+    color: $text_color;
+  }
+}
