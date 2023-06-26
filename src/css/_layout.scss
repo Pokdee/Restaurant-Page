@@ -35,10 +35,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   background-color: $shady_bg;
 }
 .btn {
-  width: 7rem;
+  width: 5rem;
   height: 4rem;
   font-size: 1.5rem;
   font-weight: lighter;
@@ -77,4 +78,8 @@ body {
 
 .off {
   display: none;
+}
+
+.clicked {
+  border-bottom: 5px solid white;
 }

@@ -27,6 +27,8 @@ for (let i = 0; i < 3; i++) {
   tabCon.appendChild(button);
 }
 tabCon.firstChild.textContent = "Home";
+tabCon.firstChild.classList.add("clicked");
+
 tabCon.firstChild.setAttribute("name", "home");
 
 tabCon.children[1].textContent = "Menu";
