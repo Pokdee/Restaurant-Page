@@ -7,6 +7,7 @@ const footText = document.createElement("span");
 const body = document.querySelector("body");
 // datas to show contents
 const datas = document.createElement("datas");
+// datas.classList.add("data");
 export default datas;
 
 //Heading part
@@ -26,8 +27,13 @@ for (let i = 0; i < 3; i++) {
   tabCon.appendChild(button);
 }
 tabCon.firstChild.textContent = "Home";
+tabCon.firstChild.setAttribute("name", "home");
+
 tabCon.children[1].textContent = "Menu";
+tabCon.children[1].setAttribute("name", "menu");
+
 tabCon.children[2].textContent = "Contact";
+tabCon.children[2].setAttribute("name", "contact");
 
 //datas
 content.appendChild(datas);

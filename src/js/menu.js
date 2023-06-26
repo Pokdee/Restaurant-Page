@@ -2,6 +2,9 @@ import datas from "./layout";
 
 const menu = document.createElement("div");
 menu.classList.add("menu");
+menu.classList.add("off");
+
+menu.setAttribute("name", "menu");
 datas.appendChild(menu);
 
 //foods
