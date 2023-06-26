@@ -5,17 +5,17 @@ contact.classList.add("contact");
 datas.appendChild(contact);
 
 const phNo = document.createElement("h3");
-phNo.textContent = "123 456 789";
+phNo.textContent = "☎️ 123 456 789";
 phNo.classList.add("phno");
 
 const address = document.createElement("h3");
-address.textContent = "Ratchaprarop soi 12, Bangkok, Thailand";
+address.textContent = "🏠 Ratchaprarop soi 12, Bangkok, Thailand";
 address.classList.add("address");
 
 const location = new Image();
 location.src = require("../images/location.png");
 location.classList.add("location");
 
-datas.appendChild(phNo);
-datas.appendChild(address);
-datas.appendChild(location);
+contact.appendChild(phNo);
+contact.appendChild(address);
+contact.appendChild(location);

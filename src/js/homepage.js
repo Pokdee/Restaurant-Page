@@ -3,7 +3,9 @@ import nobnob from "../images/nobnob.jpg";
 
 const homeCon = document.createElement("div");
 homeCon.classList.add("home_contents");
+
 datas.appendChild(homeCon);
+
 for (let i = 0; i < 3; i++) {
   let el = document.createElement("div");
   homeCon.appendChild(el);
